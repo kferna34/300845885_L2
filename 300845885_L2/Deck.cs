@@ -32,7 +32,7 @@ namespace _300845885_L2
 
             for (int suitIndex = 0; suitIndex < 4; suitIndex++)
             {
-                switch (suitIndex)
+                switch (suitIndex)//gives a value to each face of a deck
                 {
                     case 0:
                         suit = "hearts";
