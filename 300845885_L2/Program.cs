@@ -22,7 +22,7 @@ namespace _300845885_L2
          */
         public static void Main(string[] args)
         {
-            Deck deck = new Deck();
+            Deck deck = new Deck(); // creates a new set of deck
             deck.Display();
             deck.ShuffleDeck();
             deck.Display();

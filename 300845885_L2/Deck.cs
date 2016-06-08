@@ -51,7 +51,7 @@ namespace _300845885_L2
 
                 for (int face = 1; face < 14; face++)
                 {
-                    this.Add(new Card(face, suit));
+                    this.Add(new Card(face, suit));// provide 1 new card at deck
                 } // end for - face
 
             } // end for - suit
@@ -61,7 +61,7 @@ namespace _300845885_L2
         public void Display()
         {
             Console.WriteLine("++++++++++++++++++++++++++++++++++++++");
-            Console.WriteLine("+Current Deck                        +");
+            Console.WriteLine("+           Current Deck            +");
             Console.WriteLine("++++++++++++++++++++++++++++++++++++++");
             foreach (Card card in this)
             {
@@ -96,7 +96,7 @@ namespace _300845885_L2
         public Card Deal()
         {
             Card returnedCard = this[0]; // cop the 0th card in the stack to the returned card
-            this.RemoveAt(0); //remove the 0th card
+            this.RemoveAt(0); //remove the 0th card 0 == meaning the first
             return returnedCard;
         }
 
